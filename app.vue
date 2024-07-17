@@ -2,6 +2,7 @@
   <!-- dark is a class that depends on ref darkMode -->
   <div :class="{'dark': darkMode }">
    
+    <div class="bg-white dark:bg-dim-900">
 
     <div class="min-h-full">
 
@@ -9,7 +10,7 @@
       lg:gap-5">
 
       <!-- Left sidebar -->
-        <div class="hidden bg-red-500 md:block xs:col-span-1 xl:col-span-2">
+        <div class="md:block xs:col-span-1 xl:col-span-2">
           <div class="sticky top-0">
             <SidebarLeft />
           </div>
@@ -22,10 +23,9 @@
       </div>
 
     </div>
-
-
   </div>
+</div>
 </template>
 <script setup>
-const darkMode = ref(true)
+const darkMode = ref(false)
 </script>
